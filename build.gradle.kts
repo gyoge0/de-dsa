@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    alias(libs.plugins.lombok)
 }
 
 group = "com.gyoge"
