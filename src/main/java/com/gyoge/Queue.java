@@ -15,4 +15,8 @@ public class Queue {
     public boolean isEmpty() {
         return this.list.isEmpty();
     }
+
+    public String toString() {
+        return list.toString();
+    }
 }

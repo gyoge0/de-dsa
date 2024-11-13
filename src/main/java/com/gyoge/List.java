@@ -49,4 +49,20 @@ public class List<T> {
     public boolean isEmpty() {
         return this.head == null;
     }
+
+    public String toString() {
+        StringBuilder ret = new StringBuilder("[");
+
+        var end = this.head;
+
+        while (end != null) {
+            ret.append(end.getItem());
+            ret.append(" ");
+            end = end.getNext();
+        }
+
+        ret.append("]");
+
+        return ret.toString();
+    }
 }
